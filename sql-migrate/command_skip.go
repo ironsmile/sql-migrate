@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"flag"
+	"fmt"
 	"strings"
 
-	"github.com/rubenv/sql-migrate"
+	"github.com/ironsmile/sql-migrate"
 )
 
 type SkipCommand struct {
@@ -74,7 +74,6 @@ func SkipMigrations(dir migrate.MigrationDirection, dryrun bool, limit int) erro
 	}
 
 	ui.Output("Skipped 1 migration")
-
 
 	if n == 1 {
 		ui.Output("Skipped 1 migration")
